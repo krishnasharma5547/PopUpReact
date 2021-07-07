@@ -11,7 +11,7 @@ export interface IState {
 }
 
 const App: React.FC = () => {
-  const [props, setProps] = useState({
+  const [PopUp, setPopUp] = useState({
     title: "Are You Sure?",
     dec: "Do you really want to delete these records? This process cannot be undone.",
     okText: "Delete",
@@ -19,10 +19,9 @@ const App: React.FC = () => {
   });
   return (
       <>
-        <Popup props={props}></Popup>
+        <Popup props={PopUp}></Popup>
       </>
   );
-}
-
+};
 
 export default App;
